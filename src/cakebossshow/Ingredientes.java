@@ -1,32 +1,21 @@
+
 package cakebossshow;
 
-public abstract class Ingredientes {
-    String Chantilly; 
-    public String getChantilly() {
-        return Chantilly;
+import java.util.ArrayList;
+
+
+public class Ingredientes implements AddNewIngrediente {
+    
+    private final ArrayList<String> ingrediente = new ArrayList<>();
+    private Ingredientes i;
+    
+    public void adicionarIngrediente(String i){
+        ingrediente.add(i);
     }
-    public void setChantilly(String chantilly) {
-        Chantilly = chantilly;
-    }
-    String PastaAmericana;
-    public String getPastaAmericana() {
-        return PastaAmericana;
-    }
-    public void setPastaAmericana(String pastaAmericana) {
-        PastaAmericana = pastaAmericana;
-    }
-    String MousseDeChocolate;
-    public String getMousseDeChocolate() {
-        return MousseDeChocolate;
-    }
-    public void setMousseDeChocolate(String mousseDeChocolate) {
-        MousseDeChocolate = mousseDeChocolate;
-    }
-    String RecheioDePistache;
-    public String getRecheioDePistache() {
-        return RecheioDePistache;
-    }
-    public void setRecheioDePistache(String recheioDePistache) {
-        RecheioDePistache = recheioDePistache;
-    }
+    
+     public void sortearIngrediente(){
+          
+        for(String ac : ingrediente)
+            ac.update(i);
+        }
 }

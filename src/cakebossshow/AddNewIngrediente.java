@@ -4,9 +4,15 @@
  */
 package cakebossshow;
 
-public interface Ferramenta {
-    String nome();
-    int pontuacao();
-    String utilidade();
+import java.util.ArrayList;
+
+
+public interface AddNewIngrediente {
+    
+     public static void main(String[] args) {
+        
+        void novoIngrediente(ArrayList<String> adicionarIngrediente);
+        
+    }
     
 }

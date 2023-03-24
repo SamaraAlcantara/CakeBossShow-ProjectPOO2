@@ -1,55 +1,27 @@
+package cakebossshow;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cakebossshow;
 
 
-public class BecaMilano {
-    private String nome;
-    private String especialidade;
-    private int pontuacao;
-    private String ferramenta;
+import java.util.List;
+import java.util.Observer;
 
-    public BecaMilano(String nome, String especialidade, int pontuacao) {
-        this.nome = nome;
-        this.especialidade = especialidade;
-        this.pontuacao = pontuacao;
+public class BecaMilano extends Cozinheiro {
+    public BecaMilano() {
+        super("BecaMilano");
     }
-
-    public String getNome() {
-        return nome;
+    public void cozinhar(List ingredientes, List ferramentas, String ingredienteSurpresa) {
+        System.out.println(getNome() + " está preparando a receita com os seguintes ingredientes: " + ingredientes);
+        System.out.println("Usando as seguintes ferramentas: " + ferramentas);
+        System.out.println("Um ingrediente surpresa foi adicionado no meio do processo: " + ingredienteSurpresa);
+        // Implementação do processo de cozimento pela Beca
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+    
+    public String getPontuacao() {
+        return null;
     }
-
-    public String getEspecialidade() {
-        return especialidade;
-    }
-
-    public void setEspecialidade(String especialidade) {
-        this.especialidade = especialidade;
-    }
-
-    public int getPontuacao() {
-        return pontuacao;
-    }
-
-    public void setPontuacao(int pontuacao) {
-        this.pontuacao = pontuacao;
-    }
-
-    public String getFerramenta() {
-        return ferramenta;
-    }
-
-   
-    public void receberFerramenta(){
-        
-    }
-    public void trocarFerramenta(){
-        
+    public void prepararReceita(List ingredientes, List ferramentas, String ingredienteSurpresa) {
     }
 }
